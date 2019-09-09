@@ -1,0 +1,8 @@
+<div *ngIf="letters$ | async as letters">
+  <div *ngFor="let letter of letters">
+    <h2>{{letter.letter}}</h2>
+    <ul>
+      <li *ngFor="let contact of letter.contacts">{{contact.name}}</li>
+    </ul>
+  </div>
+</div>
